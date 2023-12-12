@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+.kl_top_carousel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.kl_Carousal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f3fb;
+}
+
+.kl_carousel {
+  overflow: hidden;
+  width: 700px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kl_inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.kl_carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.kl_carousel-item-text {
+  font-size: 1.15rem;
+  margin: 0 22px 0 20px;
+  white-space: normal;
+  color: #617d98;
+}
+.kl_carousel-img {
+  width: 250px;
+  margin: 0 22px 0 23px;
+}
+
+/* final stage */
+
+.kl_carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kl_button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.kl_indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.kl_indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.kl_indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.kl_indicator-symbol {
+  color: #26343f;
+}
+
+.kl_indicator-symbol-active {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .kl_top_carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .kl_carousel {
+    overflow: hidden;
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kl_inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .kl_carousel-item {
+    display: inline-flex;
+    align-items: center;
+
+    justify-content: center;
+    height: 360px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .kl_carousel-item-text {
+    font-size: 1.15rem;
+    margin: 0 22px 0 20px;
+    white-space: normal;
+    color: #617d98;
+  }
+  .kl_carousel-img {
+    width: 250px;
+  }
+  .kl_carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .kl_button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .kl_indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .kl_indicator-buttons {
+    border: none;
+    cursor: pointer;
+  }
+
+  .kl_indicators > button {
+    margin: 5px;
+    background: none;
+  }
+
+  .kl_indicator-symbol {
+    color: #26343f;
+  }
+
+  .kl_indicator-symbol-active {
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kl_top_carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kl_carousel {
+    overflow: hidden;
+    /* width: 700px; */
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kl_inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .kl_carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 480px; */
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .kl_carousel-item-text {
+    font-size: 1.12rem;
+    margin: 0 22px 0 20px;
+    white-space: normal;
+    color: #617d98;
+  }
+  .kl_carousel-img {
+    /* width: 250px; */
+    width: 200px;
+  }
+  .kl_carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .kl_button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .kl_indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .kl_indicator-buttons {
+    border: none;
+    cursor: pointer;
+  }
+
+  .kl_indicators > button {
+    margin: 5px;
+    background: none;
+  }
+
+  .kl_indicator-symbol {
+    color: #26343f;
+  }
+
+  .kl_indicator-symbol-active {
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kl_top_carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .kl_carousel {
+    overflow: hidden;
+    width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kl_inner {
+    white-space: nowrap;
+
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .kl_carousel-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .kl_carousel-item-text {
+    font-size: 1.15rem;
+    margin: 20px 22px 0 20px;
+    white-space: normal;
+    color: #617d98;
+  }
+  .kl_carousel-img {
+    width: 300px;
+    padding: 0 20px 0 20px;
+  }
+  .kl_carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .kl_button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .kl_indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .kl_indicator-buttons {
+    border: none;
+    cursor: pointer;
+  }
+
+  .kl_indicators > button {
+    margin: 5px;
+    background: none;
+  }
+
+  .kl_indicator-symbol {
+    color: #26343f;
+  }
+
+  .kl_indicator-symbol-active {
+    color: #ffffff;
+  }
+}
